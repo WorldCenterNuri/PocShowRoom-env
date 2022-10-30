@@ -58,7 +58,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: pocshow.azurecr.io/details:v1-4
+        image: pocshow.azurecr.io/details:v1-5
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -97,7 +97,7 @@ spec:
       serviceAccountName: bookinfo-ratings
       containers:
       - name: ratings
-        image: pocshow.azurecr.io/ratings:v1-4
+        image: pocshow.azurecr.io/ratings:v1-5
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -136,7 +136,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: pocshow.azurecr.io/reviews:v1-4
+        image: pocshow.azurecr.io/reviews:v1-5
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -178,7 +178,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: pocshow.azurecr.io/reviews:v2-4
+        image: pocshow.azurecr.io/reviews:v2-5
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -220,7 +220,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: pocshow.azurecr.io/reviews:v3-4
+        image: pocshow.azurecr.io/reviews:v3-5
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -269,7 +269,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: pocshow.azurecr.io/productpage:4
+        image: pocshow.azurecr.io/productpage:5
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
