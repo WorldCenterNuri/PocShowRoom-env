@@ -59,7 +59,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: hsleeshowroomcr.azurecr.io/details:v1-12
+        image: hsleeshowroomcr.azurecr.io/details:v1-14
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -99,7 +99,7 @@ spec:
       serviceAccountName: bookinfo-ratings
       containers:
       - name: ratings
-        image: hsleeshowroomcr.azurecr.io/ratings:v1-12
+        image: hsleeshowroomcr.azurecr.io/ratings:v1-14
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -139,7 +139,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: hsleeshowroomcr.azurecr.io/reviews:v1-12
+        image: hsleeshowroomcr.azurecr.io/reviews:v1-14
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -182,7 +182,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: hsleeshowroomcr.azurecr.io/reviews:v2-12
+        image: hsleeshowroomcr.azurecr.io/reviews:v2-14
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -225,7 +225,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: hsleeshowroomcr.azurecr.io/reviews:v3-12
+        image: hsleeshowroomcr.azurecr.io/reviews:v3-14
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -275,7 +275,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: hsleeshowroomcr.azurecr.io/productpage:12
+        image: hsleeshowroomcr.azurecr.io/productpage:14
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
