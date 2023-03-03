@@ -32,6 +32,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  namespace: bookinfo
   name: bookinfo-details
   labels:
     account: details
@@ -59,7 +60,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: hsleeshowroomcr.azurecr.io/details:v1-19
+        image: hsleeshowroomcr.azurecr.io/details:v1-20
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -72,6 +73,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  namespace: bookinfo
   name: bookinfo-ratings
   labels:
     account: ratings
@@ -99,7 +101,7 @@ spec:
       serviceAccountName: bookinfo-ratings
       containers:
       - name: ratings
-        image: hsleeshowroomcr.azurecr.io/ratings:v1-19
+        image: hsleeshowroomcr.azurecr.io/ratings:v1-20
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -112,6 +114,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  namespace: bookinfo
   name: bookinfo-reviews
   labels:
     account: reviews
@@ -139,7 +142,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: hsleeshowroomcr.azurecr.io/reviews:v1-19
+        image: hsleeshowroomcr.azurecr.io/reviews:v1-20
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -182,7 +185,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: hsleeshowroomcr.azurecr.io/reviews:v2-19
+        image: hsleeshowroomcr.azurecr.io/reviews:v2-20
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -225,7 +228,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: hsleeshowroomcr.azurecr.io/reviews:v3-19
+        image: hsleeshowroomcr.azurecr.io/reviews:v3-20
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -248,6 +251,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  namespace: bookinfo
   name: bookinfo-productpage
   labels:
     account: productpage
@@ -275,7 +279,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: hsleeshowroomcr.azurecr.io/productpage:19
+        image: hsleeshowroomcr.azurecr.io/productpage:20
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
