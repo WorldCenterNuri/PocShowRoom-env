@@ -39,6 +39,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bookinfo
   name: details-v1
   labels:
     app: details
@@ -58,7 +59,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: pocshow.azurecr.io/details:v1-7
+        image: hsleeshowroomcr.azurecr.io/details:v1-12
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -78,6 +79,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bookinfo
   name: ratings-v1
   labels:
     app: ratings
@@ -97,7 +99,7 @@ spec:
       serviceAccountName: bookinfo-ratings
       containers:
       - name: ratings
-        image: pocshow.azurecr.io/ratings:v1-7
+        image: hsleeshowroomcr.azurecr.io/ratings:v1-12
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -117,6 +119,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bookinfo
   name: reviews-v1
   labels:
     app: reviews
@@ -136,7 +139,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: pocshow.azurecr.io/reviews:v1-7
+        image: hsleeshowroomcr.azurecr.io/reviews:v1-12
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -159,6 +162,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bookinfo
   name: reviews-v2
   labels:
     app: reviews
@@ -178,7 +182,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: pocshow.azurecr.io/reviews:v2-7
+        image: hsleeshowroomcr.azurecr.io/reviews:v2-12
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -201,6 +205,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bookinfo
   name: reviews-v3
   labels:
     app: reviews
@@ -220,7 +225,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: pocshow.azurecr.io/reviews:v3-7
+        image: hsleeshowroomcr.azurecr.io/reviews:v3-12
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -250,6 +255,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bookinfo
   name: productpage
   labels:
     app: productpage
@@ -269,7 +275,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: pocshow.azurecr.io/productpage:7
+        image: hsleeshowroomcr.azurecr.io/productpage:12
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
