@@ -32,7 +32,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: bookinfo-details
   labels:
     account: details
@@ -40,7 +40,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: details-v1
   labels:
     app: details
@@ -73,7 +73,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: bookinfo-ratings
   labels:
     account: ratings
@@ -81,7 +81,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: ratings-v1
   labels:
     app: ratings
@@ -114,7 +114,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: bookinfo-reviews
   labels:
     account: reviews
@@ -122,7 +122,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: reviews-v1
   labels:
     app: reviews
@@ -165,7 +165,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: reviews-v2
   labels:
     app: reviews
@@ -208,7 +208,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: reviews-v3
   labels:
     app: reviews
@@ -251,7 +251,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: bookinfo-productpage
   labels:
     account: productpage
@@ -259,7 +259,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bookinfo
+  namespace: ingress-nginx
   name: productpage
   labels:
     app: productpage
