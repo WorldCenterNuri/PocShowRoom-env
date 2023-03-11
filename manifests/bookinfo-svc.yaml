@@ -90,6 +90,6 @@ spec:
   - port: 80
     name: http
     targetPort: 9080
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: productpage
